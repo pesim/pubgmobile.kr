@@ -1,0 +1,40 @@
+@CHARSET "utf-8";
+
+/* layout */
+.menu_on{height:100%;overflow:hidden}
+
+.wrap{position:relative;width:1120px;margin:0 auto;padding:100px 0}
+section.wrap{padding-top:0}
+.wrap:after{content:"";display:block;clear:both}
+.ir{display:block;background-image:url(../../images/common/ir_icon.png);background-repeat:no-repeat;overflow:hidden;font-size:0;line-height:0;text-indent:-999em}
+
+header{position:relative;text-align:center;color:#fff;background:url(../../images/common/bg_header.png) no-repeat 50% 0}
+header h1{padding:25px 0 5px}
+header nav{border-top:1px solid rgba(255, 255, 255, 0.2)}
+header nav ul{}
+header nav ul li{display:inline-block;height:60px;padding:0 35px;line-height:60px}
+header nav ul li a{font-size:19px;font-family:'Josefin Sans';font-weight:300;color:#fff;opacity:.7}
+header aside{position:absolute;top:60px;left:50%;margin-left:345px;}
+header aside a{display:inline-block;padding:0 13px;color:#fff;line-height:16px;vertical-align:middle}
+header aside a:nth-child(n+2){opacity:.7;background:url(../../images/common/bar_header_aside.png) no-repeat 0 4px}
+header aside i.search{width:16px;height:16px;background-position:0 0}
+
+footer{height:193px;padding:53px 0 0;font-size:12px;text-transform:uppercase;text-align:center;color:rgba(255, 255, 255, 0.7);background:url(../../images/common/bg_footer.png) no-repeat 50% 0}
+footer p:nth-child(2){margin:20px 0 5px}
+footer p span{display:inline-block;width:1px;height:6px;margin:0 7px;vertical-align:middle;background:#a8afb5}
+
+section h2{margin-bottom:50px;font-family:'Josefin Sans';font-weight:600;color:#000;font-size:40px;text-align:center;letter-spacing:-1px}
+
+.location{margin-bottom:80px;padding:10px 0;}
+.location li{position:relative;display:inline-block;padding:0 10px;} 
+.location li a{font-family:'Josefin Sans';color:#646464;font-size:12px;letter-spacing:0}
+.location li.active a{color:#000} 
+.location li:first-child{padding-left:0;}
+.location li + li:before{content:"";display:block;position:absolute;top:9px;left:-3px;width:5px;height:9px;background:url(../../images/common/ir_icon.png) no-repeat -20px 0;}
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	
+} 
+

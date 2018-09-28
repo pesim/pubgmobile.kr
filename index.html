@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="title" content="배틀그라운드 모바일">
+	<meta name="description" content="이제, 모든 곳이 배틀그라운드. 배틀그라운드 모바일 사전예약 시작.">
+	<meta name="keywords" content="배틀그라운드,배틀그라운드모바일,배틀그라운드 모바일,battleground,BATTLEGROUND,battlegroundsmobile,battlegrounds mobile,BATTLEGROUNDSMOBILE,BATTLEGROUNDS MOBILE">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<title>BATTLEGROUNDS MOBILE</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="https://alvarotrigo.com/fullPage/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="https://alvarotrigo.com/fullPage/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="https://alvarotrigo.com/fullPage/vendors/scrolloverflow.min.js"></script>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta property="og:url"                content="https://battlegroundsmobile.kr" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="배틀그라운드 모바일 " />
+	<meta property="og:description"        content="이제, 모든 곳이 배틀그라운드. 배틀그라운드 모바일 사전예약 시작." />
+	<meta property="og:image"              content="https://battlegroundsmobile.kr/images/facebook_2.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="627" />
+
+	<meta itemprop="name" content="배틀그라운드 모바일" />
+	<meta itemprop="description" content="이제, 모든 곳이 배틀그라운드. 배틀그라운드 모바일 사전예약 시작." />
+	<meta itemprop="image" content="https://battlegroundsmobile.kr/images/facebook_2.jpg" />
+
+	<meta name="naver-site-verification" content="040e6b05b0b8f86bbb856b2ad03ce8c86bcf6f17"/>
+
+	<style>
+		html{overflow-x:hidden}
+		html, body{width:100%;margin:0;padding:0;font-family:'Malgun Gothic', Tahoma, Geneva, sans-serif;font-size:14px;line-height:1.5;color:#fff;background:#000;letter-spacing:-0.5px;-webkit-text-size-adjust:none}
+		body{position:relative}
+
+		footer{position:absolute;bottom:50px;width:100%;margin:0;padding:0;text-align:center;z-index:9999}
+		footer > img{opacity:0.6}
+		footer p{margin-top:10px;font-size:14px;opacity:0.4}
+		a.btnTop{display:block;position:absolute;bottom:-50px;right:270px;width:120px;height:50px;text-align:center;line-height:50px;color:#fff;text-decoration:none;background:rgba(85, 70, 67, 0.4)}
+
+		.blind{overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:0;height:0;font-size:0;line-height:0;text-indent:-999em}
+		.section{position:relative;overflow:hidden;width:100%;/* height:0;padding-bottom:56.25%;*/text-align:center;box-sizing:border-box;}
+		.section .inner{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:9999;
+		-webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+		}
+
+		#section01{background:url(./images/bg_section01_3.jpg) no-repeat 50% 50%}
+		#section01 .inner{width:640px}
+		#section01 h1{margin:0 auto 10px}
+		#section01 h1 img{display:block;margin:0 auto}
+		#section01 .innerMovie{position:relative;width:100%;height:0;padding-bottom:56.25%}
+		#section01 .innerMovie iframe{position:absolute;top:0;left:0;bottom:0;width:100%;height:100%;}
+		#section01 p{margin:50px 0 20px}
+		#section01 ul{margin:0 0 10px;padding:0;}
+		#section01 ul li{display:inline-block;margin-right:3px}
+		#section01 ul li a,
+		#section01 ul li a img{display:block}
+
+		aside{position:fixed;top:30px;right:60px;text-align:center;z-index:9999}
+		aside a.btnGo{display:inline-block;width:40px;height:40px;margin:0 0 12px 0;font-size:0;line-height:0;color:#000;vertical-align:bottom}
+		aside a.btnGo.btnMute{margin-right:0;background:url(./images/btn_mute.png) no-repeat 0 0;}
+		aside a.btnGo.btnMute.mute{margin-right:0;background:url(./images/btn_unmute.png) no-repeat 0 0;}
+		aside ul{margin:0;padding:0;list-style:none;background:rgba(85, 70, 67, .4)}
+		aside ul li{display:block;margin:0;padding:0 7px;list-style:none}
+
+        .fLogo{position:fixed;top:15px;left:15px;z-index:1000000;}
+        
+		.bgMovie{position:absolute;top:0;right:0;bottom:0;left:0;background:#000;z-index:-99;}
+    	.bgMovie .bxMovie{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+		.bgMovie iframe{display:block;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;margin:0;padding:0;border:0;pointer-events:none;opacity:.3}
+		@media (min-aspect-ratio:16/9) {
+		    .bgMovie .bxMovie{height:300%;top:-100%}
+		}
+		@media (max-aspect-ratio:16/9) {
+			.bgMovie .bxMovie{width:300%;left:-100%;}
+			#section03{padding:60px 0 0}
+		}
+		
+        @media all and (max-width:1441px){
+            #section01 p{margin:20px 0 10px}
+            aside{top:15px;right:15px}
+            aside a.btnGo.btnMute{margin-right:0;}
+        }
+		
+        @media all and (max-width:1025px){
+            #section01{background:url(./images/bg_mobile_03.jpg) no-repeat 50% 0;background-size:cover}
+            #section02{background:url(./images/bg_mobile_02.jpg) no-repeat 50% 0;background-size:cover}
+            .blind iframe,
+        	.section .bgMovie,
+        	.section .bgMovie .bxMovie iframe{display:none}
+        	#section01 h1{margin:0 auto}
+        	#section01 h1 img{display:block;width:240px}
+        	#section01 p{margin:15px 0 10px}
+        	#section01 p img{display:block;width:310px;margin:0 auto;}
+        	footer{bottom:30px}
+        	footer a.btnTop{bottom:-30px;right:20px}
+        }
+        @media all and (max-width:768px){
+        	footer img{width:161px}
+        	footer p{font-size:9px}
+    		#section01 .inner{width:90%}
+    		#section01 h1 img{width:200px}
+    		#section01 p{margin:20px 0 15px}
+    		#section01 p img{width:250px}
+    		#section01 ul{margin:0 0 5px}
+    		#section01 ul li a img{width:90px}
+    		#section01 .inner > a img{display:block;width:280px;margin:0 auto}    		
+        	#section02 p img{width:313px}
+    		aside a.btnGo{width:30px;height:30px;margin:0 0 6px}
+    		aside a.btnGo img{display:block;width:100%}
+    		aside a.btnGo.btnMute{background-size:100% !important}
+    		footer a.btnTop{bottom:-30px;right:20px;width:60px;height:30px;line-height:30px;font-size:12px}
+    		
+    		.fLogo{}
+    		.fLogo img{display:block;height:30px}
+        }
+		@media all and (max-width:480px){
+            #section01 h1 img{width:160px}
+            #section01 p img{width:180px}
+            #section01 ul li a img{width:70px}
+            #section01 .inner > a img{width:225px}
+            footer a.btnTop{right:0}
+		}
+
+        @media all and (max-width:320px){
+            footer{padding-right:10px;padding-left:10px;box-sizing:border-box;}
+        }
+	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117249821-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117249821-1');
+	</script>
+
+
+	<script type="text/javascript"> 
+		var _ntp = {}; 
+		_ntp.host = (('https:' == document.location.protocol) ? 'https://' : 'http://') 
+		_ntp.dID = 916; 
+		document.write(unescape("%3Cscript src='" + _ntp.host + "nmt.nsmartad.com/content?cid=1' type='text/javascript'%3E%3C/script%3E")); 
+	</script> 
+
+	<script>
+		callback = function(){}
+	</script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<!--NSmart Track Tag Script-->
+<script type='text/javascript'>
+	callbackFn = function() {};
+	var _nsmart = _nsmart || [];
+	_nsmart.host = _nsmart.host || (('https:' == document.location.protocol) ? 'https://' : 'http://');
+	_nsmart.push([13095, 33545]); // 캠페인 번호와 페이지 번호를 배열 객체로 전달
+	document.write(unescape("%3Cscript src='" + _nsmart.host + "n00.nsmartad.com/etc?id=10' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+	callbackFn= function(){}
+</script>
+<!--NSmart Track Tag Script End..-->
+
+
+
+<div class="fLogo"><img src="./images/logo_pubg.png"/></div>
+<div id="fullpage">
+	<div class="section" id="section01">
+		<div class="inner">
+			<h1><img src="./images/logo_section01_2.png" alt="" /></h1>
+			
+			<div class="innerMovie">
+				<iframe id="vod01" data-keepplaying src="https://www.youtube.com/embed/scqEFKUY5ZQ?autoplay=1&amp;enablejsapi=1&amp;rel=0&amp;showinfo=0&amp;controls=0&amp;loop=1&amp;playlist=scqEFKUY5ZQ" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+			</div>
+			
+			<p><img src="./images/section01_txt_01.png" alt="" /></p>
+			
+			<ul>
+				<li><a href="https://goo.gl/MtLuvA" target="_blank" onclick="javascript:NTrackObj.callTrackTag('33546', callbackFn, 13095);_nto.callTrack('6169', callback());"><img src="./images/section01_btn_01.png" alt="" /></a></li>
+				<li><a href="https://goo.gl/ishibE" target="_blank" onclick="javascript:NTrackObj.callTrackTag('33547', callbackFn, 13095);_nto.callTrack('6170', callback());"><img src="./images/section01_btn_02.png" alt="" /></a></li>
+				<li><a href="https://goo.gl/E1zZUU" target="_blank" onclick="javascript:NTrackObj.callTrackTag('33548', callbackFn, 13095);_nto.callTrack('6171', callback());"><img src="./images/section01_btn_03.png" alt="" /></a></li>
+			</ul>		
+			<a href="//cafe.naver.com/battlegroundsmobile" target="_blank" onclick="javascript:NTrackObj.callTrackTag('33549', callbackFn, 13095);_nto.callTrack('6172', callback());"><img src="./images/section01_btn_04.png" alt="" /></a>
+			
+		</div>
+	</div>
+	
+	<div class="section" id="section02">
+		<div class="inner">
+			<p><img src="./images/logo_section02.png" alt="" /></p>
+		</div>
+
+		<div class="bgMovie">
+			<div class="bxMovie bxMovie02">
+				<iframe id="vod02" data-keepplaying src="https://www.youtube.com/embed/rM07qUAF6Do?autoplay=1&amp;enablejsapi=1&amp;rel=0&amp;showinfo=0&amp;controls=0&amp;loop=1&amp;playlist=rM07qUAF6Do" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		
+        <footer>
+        	<a href="#main" data-menuanchor="main" class="btnTop">▲ TOP</a>
+            <img src="./images/teaser/batgd_footer01.png" alt="" />
+            <p>Copyright ⓒ2018 PUBG Corporation. All rights reserved.<br />PLAYERUNKNOWN'S BATTLEGROUNDS 및 PUBG는 PUBG CORPORATION의 등록된 상표입니다.</p>
+        </footer>
+	</div>
+		
+		
+	
+</div>
+
+
+<aside id="menu">
+	<a href="https://cafe.naver.com/battlegroundsmobile" target="_blank" class="btnGo" onclick="gtag('event', 'push', {'event_category' : 'community','event_label' : 'officialsite'});"><img src="./images/btn_cafe.png" alt="카페 바로가기"></a>
+	<a href="https://www.facebook.com/BattlegroundsMobileKR/" target="_blank" class="btnGo" onclick="gtag('event', 'push', {'event_category' : 'facebook','event_label' : 'officialface'});"><img src="./images/btn_facebook.png" alt="페이스북 바로가기"></a>
+	<a href="#" class="btnGo btnMute">소리조절</a>
+</aside>
+
+
+<!-- <div class="blind">
+	<iframe id="audio01" data-keepplaying src="https://www.youtube.com/embed/NZkNd-FGIuE?autoplay=1&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;controls=0&amp;playlist=NZkNd-FGIuE" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+</div> -->
+
+<script type="text/javascript">
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubeIframeAPIReady() {
+	var player;
+	player1 = new YT.Player('vod01', {
+	});
+	player2 = new YT.Player('vod02', {
+		events:{
+	      'onReady':onPlayerReady
+	    }
+	});
+	player3 = new YT.Player('audio01', {
+	});
+}
+
+function onPlayerReady(event) {
+  event.target.mute(0);
+}
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		anchors:['main', 'sub']
+	});
+	
+	$('.btnMute').on('click', function(e){
+		e.stopImmediatePropagation();
+		var t = $(this);
+		if(!t.hasClass('mute')){
+			player1.mute();
+			$(this).addClass('mute');
+		} else {
+			player1.unMute();
+			$(this).removeClass('mute');
+		}
+		return false;
+	});
+	
+	$('.btnClose').on('click', function(e){
+
+		$('.agreePop').fadeOut(150);
+		$('.bgOverlay').fadeOut(150);
+		return false;
+	});
+
+});
+
+
+</script>
+
+
+
+</body>
+</html>
